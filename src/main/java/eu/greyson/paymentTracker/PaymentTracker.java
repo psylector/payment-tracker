@@ -61,7 +61,7 @@ public class PaymentTracker {
         System.out.println("Invalid input!");
       }
 
-      System.out.println(balancesToString(balances));
+      System.out.println("\n" + balancesToString(balances));
     }
   }
 
