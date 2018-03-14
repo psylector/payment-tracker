@@ -22,6 +22,7 @@ java -jar target/payment-tracker-1.0-SNAPSHOT.jar
 
 ### Usage
 
+Transaction processing cause updates of current balances.
 
 Sample input:
 ```sh
