@@ -87,7 +87,7 @@ public class PaymentTracker {
   protected static String balancesToString(Map<String, BigDecimal> balances) {
     StringBuilder result = new StringBuilder();
     for (Map.Entry<String, BigDecimal> entry : balances.entrySet()) {
-      if (!entry.getValue().equals(BigDecimal.ZERO)) {
+      if (entry.getValue().compareTo(BigDecimal.ZERO) != 0) {
         result.append(entry.getKey());
         result.append(" ");
         result.append(entry.getValue());
