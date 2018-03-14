@@ -4,7 +4,7 @@ Payment tracker is simple console Java application for simple payment processing
 It stores current balances of each currency in memory and prints periodically current balances. 
 
 Main features:
-- add transaction in random currencies and update current balances by currency code
+- insert transaction in random currency and update current balance by transaction currency code
 - periodical print current balances once a minute
 
 ### Installation
@@ -18,6 +18,17 @@ Run application:
 ```sh
 mvn package
 java -jar target/payment-tracker-1.0-SNAPSHOT.jar
+```
+
+### Commands
+```sh
+# process transactions by following section "Usage"
+XXX +100
+XXX -99.99
+XXX -0,01
+
+# end of application
+quit
 ```
 
 ### Usage
